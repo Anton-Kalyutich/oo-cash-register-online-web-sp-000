@@ -11,10 +11,6 @@ class CashRegister
     @total
   end
   
-  def items
-    @@items
-  end
-  
   def add_item(item, price, quantity=1)
     self.items << item
     self.total += price * quantity
